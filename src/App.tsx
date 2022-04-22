@@ -1,11 +1,15 @@
 import React, { FC } from "react"
 import "./App.css"
-import { Person } from "./components/Person"
+import { Person, HairColor } from "./components/Person"
 
 const App: FC = () => {
   return (
     <div className="App">
-      <Person email="sample@gmail.com" name="Charles" />
+      <Person
+        email="sample@gmail.com"
+        name="Charles"
+        hairColor={HairColor.Pink}
+      />
     </div>
   )
 }
