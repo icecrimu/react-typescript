@@ -1,7 +1,13 @@
+import React, { FC } from "react"
 import "./App.css"
+import { Person } from "./components/Person"
 
-function App() {
-  return <div className="App">Hello world</div>
+const App: FC = () => {
+  return (
+    <div className="App">
+      <Person email="sample@gmail.com" name="Charles" />
+    </div>
+  )
 }
 
 export default App
